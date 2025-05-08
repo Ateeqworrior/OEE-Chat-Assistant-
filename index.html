@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OEE Chat Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="new-chat">➕ New Chat</button>
+
+      <nav class="chat-history">
+        <!-- Dynamic Chat History Will Appear Here -->
+      </nav>
+
+      <div class="user-info">
+        <div class="username">Emily</div>
+        <button class="upgrade">Upgrade to Pro →</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="chat-window">
+
+      <!-- Header -->
+      <header class="header">OEE Chat Assistant ✨</header>
+
+      <!-- Chat Display Area -->
+      <section class="chat-area" id="chatArea">
+        <div class="message user">Hello!</div>
+        <div class="message bot">
+          <span class="bot-icon">🤖</span>
+          <span class="bot-text">Hi there! How can I help you today?</span>
+        </div>
+      </section>
+
+      <!-- Upload and Result Display -->
+      <section class="upload-box">
+        <input type="file" id="fileInput" accept=".xlsx" />
+        <div id="oeeOutput" class="oee-result"></div>
+      </section>
+
+      <!-- Filters -->
+      <section class="filter-box">
+        <select id="deviceIdFilter">
+          <option value="">Select Device ID</option>
+        </select>
+        <select id="locationFilter">
+          <option value="">Select Location</option>
+        </select>
+        <select id="dateFilter">
+          <option value="">Select Date</option>
+        </select>
+      </section>
+
+      <!-- Chat Input -->
+      <section class="input-area">
+        <input id="userInput" placeholder="Send your message..." />
+        <button id="sendBtn">➤</button>
+      </section>
+
+      <!-- Footer -->
+      <footer style="text-align: center; font-size: 0.8rem; margin-top: 10px; color: #aaa;">
+        © 2025 OEE Chat Assistant | Developed by Ateeq Ur Rahaman
+      </footer>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
