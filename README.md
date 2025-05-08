@@ -1,4 +1,4 @@
-# 📊 SmartOEE – Gen AI Chat-Based OEE Calculator
+# 📊 SmartOEE – Gen AI Chat-Based OEE Chat Assistant ✨
 
 This project is built as part of the **NTT DATA Gen AI Case Study** evaluation. It is an interactive Gen AI application that calculates and displays the **Overall Equipment Efficiency (OEE)** of packaging devices deployed in a biscuit manufacturing facility. The interface mimics a **ChatGPT-style conversational UI**, offering an engaging and intuitive way to query and analyze manufacturing performance using IoT sensor data.
 
